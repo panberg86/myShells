@@ -1,9 +1,9 @@
-title: OnePlus 5 OxygenOS 4.5.11
-date: 2017-09-01
+title: OnePlus 5 OxygenOS 4.5.10
+date: 2017-08-31
 categories: OnePlus 5
 tags: Stable
-file_size: 1.51 GB
-version: 4.5.11
+file_size: 1.5 GB
+version: 4.5.10
 md5: 0a9d6f88a813e5d3f786568bc89f46b5
 download: http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip
 recovery_link: http://oxygenos.oneplus.net.s3.amazonaws.com/OP5_recovery.img

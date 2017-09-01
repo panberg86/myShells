@@ -1,0 +1,14 @@
+=== HTTP URL ===
+URL (FILE): http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip
+URL (MD5): http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip.md5
+
+=== HTTPS URL ===
+URL (FILE): https://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip
+URL (MD5): https://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip.md5
+
+[Public] Anyone can read the file.
+
+===================================================================
+file size: 1,619,583,361
+96 Bytes ()
+MD5 file content: 0a9d6f88a813e5d3f786568bc89f46b5  OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip
