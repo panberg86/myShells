@@ -45,25 +45,28 @@ echo $downloadLink
 oldDownloadLink=$(cat ${newFile} | grep download | awk -F ' ' '{print $2}')
 changeLineWithType "download" ${newFile} ${downloadLink}
 
-# replace version
-# replace version in old title -- not yet
-# replace version number in version category -- done
-# new version is loaded by given version number $1 manually
-changeLineWithType "version" ${newFile} ${version}
-
 # update title
 titleRow=$(grep ^title ${newFile} -n | awk -F ':' '{print $1}')
 titleNF=$(grep ^title ${newFile} | awk -F ' ' '{print NF}')
 # if title part larger than 5, it's an open beta to upload
 # $1 is dismissed since it's title word itself. we change it with keyword later by using changeLineWithType
-if [ ${nf} -ge 5 ]
+if [ ${titleNF} -ge 6 ]
 then
-    newTitle=$(grep ^title ${newFile} | awk -F ' ' 'BEGIN{OFS=" ";}{print $2,$3,$4,$5;}')
+    newTitle=$(grep ^title ${newFile} | awk -F ' ' 'BEGIN{OFS=" ";}{print $2,$3,$4,$5,$6;}')
+    # we change version here if it is an open beta version.
+    newTitle=${newTitle}" "${version}
+    version="Open Beta "${version}
 else
     newTitle=$(grep ^title ${newFile} | awk -F ' ' 'BEGIN{OFS=" ";}{print $2,$3,$4;}')
+    newTitle=${newTitle}" "${version}
 fi
-newTitle=${newTitle}" "${version}
 changeLineWithType "title" ${newFile} "${newTitle}"
+# replace version
+# replace version in old title -- not yet
+# replace version number in version category -- done
+# new version is loaded by given version number $1 manually
+# rely on title name length to update version. decide whether to insert open beta into it.
+changeLineWithType "version" ${newFile} "${version}"
 
 # replace old md5 info -- done
 md5=$(cat ${op5_config} | grep '^MD5' | awk -F ' ' '{print $4}')
@@ -91,5 +94,5 @@ sed -i "${contentsStartingRow},\$d" ${newFile}
 cat $releaseNote >> ${newFile}
 
 
-git add ${newFile}
-git commit -m "upload ${newTitle}"
+#git add ${newFile}
+#git commit -m "upload ${newTitle}"
