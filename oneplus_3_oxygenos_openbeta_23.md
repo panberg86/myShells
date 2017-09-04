@@ -1,4 +1,4 @@
-title: OnePlus 3 OxygenOS Open 23
+title: OnePlus 3 OxygenOS Open Beta 23
 date: 2017-09-04
 categories: OnePlus 3
 tags: Beta
