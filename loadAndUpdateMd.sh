@@ -7,6 +7,7 @@ version=$1
 op5_config=upload.txt
 oldFile=$2
 releaseNote=changeLog.txt
+constOBTParamLength=6
 
 # function definition
 # $1 keyword
@@ -50,7 +51,7 @@ titleRow=$(grep ^title ${newFile} -n | awk -F ':' '{print $1}')
 titleNF=$(grep ^title ${newFile} | awk -F ' ' '{print NF}')
 # if title part larger than 5, it's an open beta to upload
 # $1 is dismissed since it's title word itself. we change it with keyword later by using changeLineWithType
-if [ ${titleNF} -ge 6 ]
+if [ ${titleNF} -ge ${constOBTParamLength} ]
 then
     newTitle=$(grep ^title ${newFile} | awk -F ' ' 'BEGIN{OFS=" ";}{print $2,$3,$4,$5,$6;}')
     # we change version here if it is an open beta version.

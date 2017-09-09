@@ -1,13 +1,14 @@
-title: OnePlus 3 OxygenOS Open Beta 23
-date: 2017-09-04
-categories: OnePlus 3
-tags: Beta
+title: OnePlus 5 OxygenOS 4.5.12
+date: 2017-09-09
+categories: OnePlus 5
+tags: Stable
 file_size: 1.51 GB
-version: Open Beta 23
+version: 4.5.12
 md5: 0a9d6f88a813e5d3f786568bc89f46b5
 download: http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5Oxygen_23_OTA_015_all_1708252353_e6d7756780064352.zip
-recovery_link: http://oxygenos.oneplus.net.s3.amazonaws.com/recovery_op3.img
-recovery_md5: ee2f1c21b2cf0dfe12e23eb7ced7edd1
+recovery_link: http://oxygenos.oneplus.net.s3.amazonaws.com/OP5_recovery.img
+recovery_md5: 19088df0d775628be54564130987cdd8
+
 ---
 **Camera**
 * Photo noise reduction
