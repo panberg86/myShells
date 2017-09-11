@@ -1,0 +1,4 @@
+*.swp
+*.swo
+#ignore all md test files from now on
+*.md
