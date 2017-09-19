@@ -95,5 +95,5 @@ sed -i "${contentsStartingRow},\$d" ${newFile}
 cat $releaseNote >> ${newFile}
 
 
-#git add ${newFile}
-#git commit -m "upload ${newTitle}"
+git add ${newFile}
+git commit -m "upload ${newTitle}"
