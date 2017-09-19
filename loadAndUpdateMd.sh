@@ -13,11 +13,11 @@ constOBTParamLength=6
 # $1 keyword
 # $2 fileToWrite
 # $3 newValueToWrite
-changeLineWithType() {
-	keyWord=$1
-	fileToWrite=$2
-	newValueToWrite="$3"
-	rowNum=$(grep ^${keyWord} ${fileToWrite} -n | awk -F ':' '{print $1}')
+changeLineWithType() {   
+    keyWord=$1
+    fileToWrite=$2
+    newValueToWrite="$3"
+    rowNum=$(grep ^${keyWord} ${fileToWrite} -n | awk -F ':' '{print $1}')
     newValueToWrite="${keyWord}: "${newValueToWrite}
     echo ${newValueToWrite}
     sed -i "${rowNum}c\
