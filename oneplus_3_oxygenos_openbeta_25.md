@@ -1,5 +1,5 @@
-title: OnePlus 3 OxygenOS Open Beta 26
-date: 2017-09-11
+title: OnePlus 3 OxygenOS Open Beta 25
+date: 2017-09-19
 categories: OnePlus 3
 tags: Beta
 file_size: 1.51 GB
