@@ -7,3 +7,9 @@ loadAndUpdateMd.sh 4.5.12 oneplus_5_oxygenos_4.5.11.md
 # oneplus3 obt test script
 rm oneplus_3_oxygenos_openbeta_25.md
 loadAndupdateMd.sh 25 oneplus_3_oxygenos_openbeta_23.md
+
+echo "print mp difference"
+diff oneplus_5_oxygenos_4.5.11.md oneplus_5_oxygenos_4.5.12.md
+
+echo "print obt difference"
+diff oneplus_3_oxygenos_openbeta_23.md oneplus_3_oxygenos_openbeta_25.md 
