@@ -1,5 +1,5 @@
 title: OnePlus 5 OxygenOS 4.5.12
-date: 2017-09-11
+date: 2017-09-19
 categories: OnePlus 5
 tags: Stable
 file_size: 1.51 GB
